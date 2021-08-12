@@ -1,0 +1,41 @@
+formulas(assumptions).
+
+all x
+	(leq(x,x)).
+
+all x all y
+	((leq(x,y)
+	& leq(y,x))
+	->
+	(x=y)).
+
+all x all y all z
+	((leq(x,y)
+	& leq(y,z))
+	->
+	leq(x,z)).
+
+(all x all y all z
+	((leq(x,y)
+	& leq(z,y))
+	->
+	(leq(x,z)
+	| leq(z,x)))).
+
+(all x all y
+	(lt(x,y)
+	<->
+	(leq(x,y)
+	& (x != y)))).
+
+(all x all y
+        (lt(x,y)
+        ->
+        (exists z
+                (leq(x,z)
+                & -(exists w
+                        (leq(z,w)
+                        & leq(y,w))))))).
+
+
+end_of_list.

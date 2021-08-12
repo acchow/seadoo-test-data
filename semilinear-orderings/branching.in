@@ -1,0 +1,16 @@
+formulas(assumptions).
+(all x all y
+        (incomparable(x,y)
+        <->
+        (-leq(x,y) & -leq(y,x) & (x != y)))).
+(all x all y
+	(lt(x,y)
+	<->
+	(leq(x,y)
+	& (x != y)))).
+(all x all y (-lt(x,y) | (exists u (lt(x,u) & incomparable(u,y))))).
+(all x (leq(x,x))).
+(all x all y all z (-(leq(x,y) & leq(y,z)) | leq(x,z))).
+(all x all y ((-lt(x,y) | leq(x,y) & -leq(y,x)) & (-(leq(x,y) & -leq(y,x)) | lt(x,y)))).
+(all x all y ((-incomparable(x,y) | x != y & -leq(x,y) & -leq(y,x)) & (-(x != y & -leq(x,y) & -leq(y,x)) | incomparable(x,y)))).
+end_of_list.

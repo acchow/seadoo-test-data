@@ -1,0 +1,17 @@
+formulas(assumptions).
+
+all x
+	(leq(x,x)).
+
+all x all y all z
+	((leq(x,y)
+	& leq(y,z))
+	->
+	leq(x,z)).
+
+(all x all y
+	(exists z
+		(leq(x,z)
+		& leq(y,z)))).
+
+end_of_list.
