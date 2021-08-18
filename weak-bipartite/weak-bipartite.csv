@@ -1,0 +1,8 @@
+0,1,2,3,4
+weak_bipartite,unique_line,parallel_lines,,
+weak_bipartite,double_points,graphical_incidence,strong_graphical,strict_graphical
+weak_bipartite,point_bipartite,,,
+weak_bipartite,line_existence,strong_graphical,strict_graphical,
+weak_bipartite,unique_line,strong_graphical,strict_graphical,
+weak_bipartite,partial_bipartite,graphical_incidence,strong_graphical,strict_graphical
+weak_bipartite,partial_bipartite,nontrivial_lines,strict_graphical,

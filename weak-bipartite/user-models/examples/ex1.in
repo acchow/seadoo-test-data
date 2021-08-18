@@ -1,0 +1,16 @@
+formulas(assumptions).
+
+% Example: teaches(Alice, MATH456)
+
+% Alice (a) is a professor
+line(a).
+
+% MATH456 (b) is a course
+point(b).
+
+% Alice teaches MATH456
+in(a,b).
+
+incomparable(a,b).
+
+end_of_list.

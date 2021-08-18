@@ -1,0 +1,1 @@
+(all x all y (supervises(x,y) <-> leq(x,y))).
