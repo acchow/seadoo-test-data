@@ -12,10 +12,16 @@ chain 7: ['weak_bipartite.in', 'partial_bipartite.in']
 best matching bracket found:
 
 lower bound:
+all x
+(in(x,x))
+.
+
 all x all y
-(in(x,y)
+((in(x,y)
+& point(x)
+& point(y))
 ->
-in(y,x))
+(x=y))
 .
 
 all x all y
@@ -33,39 +39,31 @@ all p
 .
 
 all x all y
-((in(x,y)
-& point(x)
-& point(y))
-->
-(x=y))
-.
-
-all x
-(in(x,x))
-.
-
-
-upper bound:
-(all l
-(line(l)
-->
-(exists p
-(point(p)
-& in(p,l)))))
-.
-
-all x all y
 (in(x,y)
 ->
 in(y,x))
 .
 
-all l
-(line(l)
-->
-(exists p
+
+upper bound:
+all x
+(in(x,x))
+.
+
+all p
 (point(p)
+->
+(exists l
+(line(l)
 & in(p,l))))
+.
+
+all x all y
+((in(x,y)
+& point(x)
+& point(y))
+->
+(x=y))
 .
 
 all x all y
@@ -89,40 +87,23 @@ all x all y
         ((p1=p2) | (l1=l2))))
 .
 
-all p
-(point(p)
-->
-(exists l
-(line(l)
-& in(p,l))))
-.
-
-(all l1 all l2 all p
-((line(l1)
-& line(l2)
-& point(p)
-& in(p,l1)
-& in(p,l2))
-->
-(l1=l2)))
-.
-
-all p
-(point(p)
-->
--line(p))
-.
-
 all x all y
-((in(x,y)
-& point(x)
-& point(y))
-->
-(x=y))
+        ((point(x)
+        & point(y)
+        & (x != y))
+        ->
+        (exists z
+                (line(z)
+                & in(x,z)
+                & in(y,z))))
 .
 
-all x
-(in(x,x))
+(all l
+(line(l)
+->
+(exists p
+(point(p)
+& in(p,l)))))
 .
 
 all x all y all z all l
@@ -137,13 +118,32 @@ all x all y all z all l
         ((z = x) | (z = y) | (x = y)))
 .
 
+all p
+(point(p)
+->
+-line(p))
+.
+
+(all l1 all l2 all p
+((line(l1)
+& line(l2)
+& point(p)
+& in(p,l1)
+& in(p,l2))
+->
+(l1=l2)))
+.
+
 all x all y
-        ((point(x)
-        & point(y)
-        & (x != y))
-        ->
-        (exists z
-                (line(z)
-                & in(x,z)
-                & in(y,z))))
+(in(x,y)
+->
+in(y,x))
+.
+
+all l
+(line(l)
+->
+(exists p
+(point(p)
+& in(p,l))))
 .

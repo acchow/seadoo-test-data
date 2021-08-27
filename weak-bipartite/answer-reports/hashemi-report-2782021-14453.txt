@@ -1,0 +1,52 @@
+seadoo hashemi answer report
+
+chain 1: ['weak_bipartite.in', 'parallel_lines.in']
+chain 2: ['weak_bipartite.in', 'strong_graphical.in']
+chain 3: no bracket found
+chain 4: ['weak_bipartite.in', 'line_existence.in']
+chain 5: unique_line.in
+chain 6: ['weak_bipartite.in', 'strong_graphical.in']
+chain 7: ['weak_bipartite.in', 'partial_bipartite.in']
+
+
+best matching theory found:
+
+all p
+(point(p)
+->
+-line(p))
+.
+all x
+(in(x,x))
+.
+all x all y
+(in(x,y)
+->
+in(y,x))
+.
+(all p1 all p2 all l1 all l2
+((point(p1)
+& point(p2)
+& line(l1)
+& line(l2)
+& in(p1,l1)
+& in(p1,l2)
+& in(p2,l1)
+& in(p2,l2))
+->
+((p1=p2) | (l1=l2))))
+.
+all x all y
+((in(x,y)
+& line(x)
+& line(y))
+->
+(x=y))
+.
+all x all y
+((in(x,y)
+& point(x)
+& point(y))
+->
+(x=y))
+.

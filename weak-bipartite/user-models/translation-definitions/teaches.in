@@ -1,0 +1,1 @@
+(all x all y (teaches(x,y) <-> in(x,y) & line(x) & point(y))).

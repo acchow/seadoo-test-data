@@ -1,0 +1,7 @@
+formulas(assumptions).
+
+Professor(Alice).
+Course(MATH456) 
+teaches(Alice,MATH456).
+
+end_of_list.

@@ -1,0 +1,9 @@
+{
+  "semilinear-orderings": {
+    "supervises": "leq"
+  },
+  "weak-bipartite": {
+    "point": "Course",
+    "line": "Professor"
+  }
+}

@@ -1,0 +1,44 @@
+seadoo hashemi answer report
+
+chain 1: no bracket found
+chain 2: ['lower_preorder.in', 'disconnected_semilinear.in']
+chain 3: no bracket found
+chain 4: no bracket found
+chain 5: no bracket found
+chain 6: no bracket found
+chain 7: no bracket found
+chain 8: disconnected_semilinear.in
+chain 9: no bracket found
+chain 10: no bracket found
+chain 11: no bracket found
+chain 12: no bracket found
+chain 13: no bracket found
+chain 14: no bracket found
+chain 15: ['lower_preorder.in', 'semilinear_ordering.in']
+chain 16: no bracket found
+
+
+best matching theory found:
+
+all x all y all z
+((leq(x,y)
+& leq(y,z))
+->
+leq(x,z))
+.
+all x
+(leq(x,x))
+.
+(all x all y all z
+((leq(x,y)
+& leq(z,y))
+->
+(leq(x,z)
+| leq(z,x))))
+.
+all x all y
+((leq(x,y)
+& leq(y,x))
+->
+(x=y))
+.

@@ -1,0 +1,1 @@
+(all x (Course(x) <-> point(x))).

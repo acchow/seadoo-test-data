@@ -1,0 +1,10 @@
+formulas(assumptions).
+
+leq(a,b).
+leq(a,c).
+leq(b,d).
+leq(a,d).
+-leq(b,c).
+-leq(c,b).
+
+end_of_list.

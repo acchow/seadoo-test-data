@@ -1,0 +1,17 @@
+0,1,2,3,4,5
+quasiorder,partial_ordering,branching,weak_upper_separative,upper_separative,up_branch
+quasiorder,lower_preorder,disconnected_semilinear,chains,linear_ordering,
+quasiorder,partial_ordering,up_disc_semilinear,up_semilinear,linear_ordering,
+quasiorder,lower_bound,semilinear_ordering,linear_ordering,,
+quasiorder,upper_preorder,up_disc_semilinear,up_semilinear,linear_ordering,
+quasiorder,partial_ordering,dual_branching,weak_separative,separative,down_branch
+quasiorder,upper_preorder,up_disc_semilinear,chains,linear_ordering,
+quasiorder,partial_ordering,disconnected_semilinear,chains,linear_ordering,
+quasiorder,upper_preorder,up_disc_semilinear,down_branch,,
+quasiorder,upper_bound,up_semilinear,linear_ordering,,
+quasiorder,lower_preorder,disconnected_semilinear,up_branch,,
+quasiorder,partial_ordering,disconnected_semilinear,up_branch,,
+quasiorder,partial_ordering,up_disc_semilinear,down_branch,,
+quasiorder,partial_ordering,up_disc_semilinear,chains,linear_ordering,
+quasiorder,lower_preorder,disconnected_semilinear,semilinear_ordering,linear_ordering,
+quasiorder,partial_ordering,disconnected_semilinear,semilinear_ordering,linear_ordering,
